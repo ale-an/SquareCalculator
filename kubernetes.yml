@@ -1,0 +1,34 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app
+spec:
+  replicas: 3  # 3 пода для обработки нагрузки  
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+        - name: my-app
+          image: my-app-image:latest
+          resources:
+            requests:
+              memory: "128Mi"  # Постоянное потребление памяти
+              cpu: "0.5"       # Начальное потребление CPU может быть высоким
+            limits:
+              memory: "128Mi"  # Ограничение памяти
+              cpu: "1"         # Ограничение CPU с учетом пиковой нагрузки
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            - labelSelector:
+              matchExpressions:
+                - key: app
+                  operator: In
+                  values:
+                    - my-app
+              topologyKey: "kubernetes.io/hostname"  # Размещение подов на разных нодах

@@ -1,0 +1,10 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=83bf95fe_002D80f1_002D47cb_002Db346_002D2609b190255a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Calculator can calculate triangle square" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::E2BA0EF8-E09F-457B-BF34-1581D08BE9CD::net8.0::SquareCalculator.Tests.CalculatorTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::1273FB17-3073-4BD6-8418-8AF21972F7F7::net8.0::Logic.Tests.CircleCalculatorTests.CanCalculateSquare&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::1273FB17-3073-4BD6-8418-8AF21972F7F7::net8.0::Logic.Tests.TriangleCalculatorTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::9BBA5ACA-9A3B-490C-BE8E-6F928D616021::net8.0::Models.Tests.CircleTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::9BBA5ACA-9A3B-490C-BE8E-6F928D616021::net8.0::Models.Tests.TriangleTests.Test&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
